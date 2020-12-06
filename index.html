@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <title>Neeraj Maurya </title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-<!--    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
+    <!--    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
     <!-- <link rel="stylesheet" type="text/css" href="css/aos.css"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--    slick slider-->
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="js/typed.js"></script>
 </head>
 
 <body>
@@ -27,9 +29,9 @@
     </header>
     <section class="banner" id="home">
         <div class="txtBx" data-aos="fade-up">
-            <h2>Hello, I'm <br><span>Neeraj Maurya.</span></h2>
-            <h3>I'm a full stack web developer</h3>
-            <a href="#about" class="btn">About Me</a>
+            <h2>Hello, I'm <br><span style="color:#2196f3">Neeraj Maurya.</span></h2>
+            <h3>I'm a <span id="type"></span></h3>
+            <a href="#contact" class="btn">Hire Me</a>
             <a href="img/NeerajMaurya.pdf" class="btn" target="_blank">Resume</a>
         </div>
     </section>
@@ -40,8 +42,8 @@
         <div class="content" data-aos="fade-right">
             <div class="contentBx w50">
                 <h3>I am full stack developer and learner.</h3>
-                <!--                <p>I do web development for you in a short time with HTML5, CSS, Javascript, latest animations and transitions,responsive design and all the features like Signup and Login feasibility, database integration. One of the key features that a site need is a Modern Design combined with a great User Interface. Being a web designer & a developer I can provide you with a high-end website that will turn your site visitors into clients.</p>-->
-                <p>I am neeraj maurya from Sultanpur Uttar pradesh.
+                <!--<p>I do web development for you in a short time with HTML5, CSS, Javascript, latest animations and transitions,responsive design and all the features like Signup and Login feasibility, database integration. One of the key features that a site need is a Modern Design combined with a great User Interface. Being a web designer & a developer I can provide you with a high-end website that will turn your site visitors into clients.</p>-->
+                <p>I am Neeraj maurya from Sultanpur Uttar pradesh.
                     I am live in Narela delhi.
                     I want to a web developer Job Opportunity.
                     I have completed three diploma in commputer science and engineering from BTEUP board.
@@ -149,20 +151,24 @@
         </div>
         <div class="content" id="project_slider" data-aos="fade-up">
             <div class="projectBx" data-aos="fade-up">
+                <div class="overlay"></div>
                 <img src="img/karam.png" alt="Project1">
                 <a href="https://neerajmauryagpj.github.io/karam/" target="_blank" class="btn">View</a>
             </div>
             <div class="projectBx" data-aos="fade-up">
+                <div class="overlay"></div>
                 <img src="img/chat.png" alt="Project2">
                 <a href="https://github.com/neerajmauryagpj/chatApplication" target="_blank" class="btn">View</a>
             </div>
             <div class="projectBx" data-aos="fade-up">
+                <div class="overlay"></div>
                 <img src="img/rakesh.png" alt="Project3">
                 <a href="https://neerajmauryagpj.github.io/rakeshverma/" target="_blank" class="btn">View</a>
             </div>
             <div class="projectBx" data-aos="fade-up">
+                <div class="overlay"></div>
                 <img src="img/flexLayout.png" alt="Project4">
-                  <a href="https://neerajmauryagpj.github.io/flexble-layout/" target="_blank" class="btn">View</a>
+                <a href="https://neerajmauryagpj.github.io/flexble-layout/" target="_blank" class="btn">View</a>
             </div>
         </div>
         <div class="heading" data-aos="fade-up">
@@ -180,21 +186,21 @@
                     <div class="box">
                         <div class="icon"></div>
                         <div class="text">
-                            <h3>Address</h3>
+                            <h3><i class="fas fa-map-marker-alt"></i>Address</h3>
                             <p>Narela Delhi,<br>110040</p>
                         </div>
                     </div>
                     <div class="box">
                         <div class="icon"></div>
                         <div class="text">
-                            <h3>Phone</h3>
+                            <h3><i class="fas fa-phone"></i>Phone</h3>
                             <p>+916392032056,<br>+917068678170</p>
                         </div>
                     </div>
                     <div class="box">
                         <div class="icon"></div>
                         <div class="text">
-                            <h3>Email</h3>
+                            <h3><i class="fas fa-envelope"></i>Email</h3>
                             <p>neerajgpj98@gmail.com</p>
                         </div>
                     </div>
@@ -217,15 +223,25 @@
 
 
 
+    <!--typed script-->
+    <script>
+        var options = {
+            strings: ['Frontend Web Developer.', 'PHP developer &amp; learner.'],
+            typeSpeed: 80,
+            backspeed: 100,
+            loop: true,
+            backDelay: 700
+        };
+
+        var typed = new Typed('#type', options);
+    </script>
 
 
-
-   
     <script type="text/javascript">
-//        window.onload = function() {
-//            alert("This Portfolio is designed by using pure HTML CSS JAVASCRIPT");
-//            document.getElementsByTagName('body')[0].style.filter = "blur(5px)";
-//        }
+        //        window.onload = function() {
+        //            alert("This Portfolio is designed by using pure HTML CSS JAVASCRIPT");
+        //            document.getElementsByTagName('body')[0].style.filter = "blur(5px)";
+        //        }
 
 
 
@@ -241,10 +257,9 @@
             menu.classList.toggle('active');
 
         }
-
     </script>
     <!--    <script src="js/aos.js"></script> -->
-<!--
+    <!--
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -262,16 +277,12 @@
             slidesToShow: 2,
             slidesToScroll: 1,
             responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
-            ]
+            }]
         });
-
     </script>
-</body>
-
-</html>
+</body></html>
